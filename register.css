@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    background-image: linear-gradient(rgba(0, 0, 20, 0.2), rgba(0, 0, 20, 0.2)), url('background2.jpg');
+    position: relative; /* Ensures absolute children are positioned relative to this */
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 410px;
+    height: 500px;
+    text-align: left;
+    box-sizing: border-box;
+    align-items: center;
+    margin-right: -800px;
+    border: solid black 1px;
+    position: relative;
+    /* animation: rgbRotate 4s linear infinite; */
+}
+
+/* Keyframes for rotating RGB box shadow */
+/* @keyframes rgbRotate {
+    0% {
+        box-shadow: 0 -5px 10px #ff0000, 5px 0 10px #00ff00, 0 5px 10px #0000ff, -5px 0 10px #ffff00;
+    }
+    25% {
+        box-shadow: 5px -5px 10px #00ff00, 5px 5px 10px #0000ff, -5px 5px 10px #ffff00, -5px -5px 10px #ff0000;
+    }
+    50% {
+        box-shadow: 0 5px 10px #0000ff, -5px 0 10px #ffff00, 0 -5px 10px #ff0000, 5px 0 10px #00ff00;
+    }
+    75% {
+        box-shadow: -5px -5px 10px #ffff00, -5px 5px 10px #ff0000, 5px 5px 10px #00ff00, 5px -5px 10px #0000ff;
+    }
+    100% {
+        box-shadow: 0 -5px 10px #ff0000, 5px 0 10px #00ff00, 0 5px 10px #0000ff, -5px 0 10px #ffff00;
+    }
+} */
+
+
+.dpicture {
+    height: 650px; /* Set height to cover the full viewport */
+    width: 900px; /* Adjust width proportionally */
+    /* background-image:url('sidebg.png'); */
+    /* background-size: 100%;  */
+     background-repeat: no-repeat; /*Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    /* border: 2px solid black; */
+    background-size: contain;
+    margin-left: 100px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    /* border: 1px solid black; */
+
+}
+
+.logopic {
+    position: absolute; /* Allows precise positioning */
+    top: 20px; /* Adjust distance from the top */
+    left: 20px; /* Adjust distance from the left */
+    height: 100px; /* Set height */
+    width: 250px; /* Set width */
+    background-image: url('logo.png');
+    background-size: 100%; /* Ensure the image covers the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    filter: contrast(2.5);
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+
+.division{
+    text-align: center;
+    padding-top: 10px;
+}
+
+span{
+    font-weight: bold;
+}
+
+form h2 {
+   font-weight: bold;
+   margin-left: 40px;
+   margin-top: 5px;
+   color: white;
+   margin-bottom: 50px;
+}
+p{
+    font-weight: normal;
+    font-size: 10px;
+    /* color: rgb(148, 143, 137); */
+    color: white;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-left: -4px;
+    border-radius: 20px;
+    background-color: rgb(247, 255, 252);
+}
+
+form input:hover {
+    background-color: rgb(199, 246, 229)
+    
+}
+
+
+/* h2 {
+    margin-bottom: 40px;
+} */
+
+form button {
+    width: 390px;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 40px;
+   
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transition: 500ms;
+}
+
+form p {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+form p a {
+    /* color: white; */
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+form p a:hover {
+    text-decoration: underline;
+    color: #bfbfbf;
+}

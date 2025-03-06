@@ -1,0 +1,465 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)), url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 440px;
+    text-align: left;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom:0px;
+}
+
+
+p{
+    text-align: center;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ 
+
+form .formdesign span {
+    width: auto;            /* Remove full width to make it smaller */
+    padding: 8px 12px;      /* Adjust padding to make it smaller */
+    font-size: 14px;        /* Decrease font size */
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;  /* Make the span inline-block for proper positioning */
+    margin-top: 8px;        /* Add some space between the input and the span */
+}
+
+form .formdesign span:hover {
+    background-color: #0056b3;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+p#errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: 500ms;
+}
+
+#roomContent .menu .mainMenu #myroomsMenuBtn:hover{
+
+    background-color: #0056b3;
+    transition: 500ms;
+}
+
+/* .mode {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+} */
+.Tmode {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+}
+
+.formdesign {
+    margin-bottom: 15px;
+}
+
+#roomsContainer {
+    display: flex;
+    
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+}
+
+
+
+.hamburger-menu {
+    position: absolute;
+    top: 1px; /* Adjusted to move closer to the top */
+    left: 40px; /* Adjusted to move closer to the left */
+    font-size: 24px; /* Reduced size */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    color: #fff; /* White color */
+    padding: 5px; /* Added padding for better click area */
+    z-index: 1000;
+    width: 100px;
+    
+}
+
+
+#menu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 2500ms ease-in-out;
+}
+
+.mainMenu{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* transition: 2500ms ease-in-out; */
+
+}
+
+.menu li{
+
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 1.110);
+
+}
+
+.menu .mainMenu span{
+
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.menu .mainMenu #ownerModeMenuBtn:hover {
+    background: #0056b3;
+    transition: 500ms;
+}
+
+
+.menu .mainMenu #tenantModeMenuBtn:hover {
+    background: #0056b3;
+    transition: 500ms;
+}
+
+.menu .mainMenu #logoutMenuBtn:hover {
+    background: #0056b3;
+    transition: 500ms;
+}
+
+/* .menu button {
+    color: white;
+    background: #007BFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+} */
+
+.menu button:hover {
+    background: #0056b3;
+}
+
+#logoutBtn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #c82333;
+}
+
+/* General Table Styles */
+#myroomsMode table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color:  rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+    
+}
+
+#UploadBtn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid wheat;
+    cursor: pointer;
+    background: rgba(76, 69, 255, 0.3); /* Transparent black */
+    color: white;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+    width: fit-content;
+}
+
+#UploadBtn:hover {
+    background: rgba(239, 102, 102, 0.5); /* Light transparent on hover */
+}
+
+
+#myroomsMode table thead tr {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#myroomsMode table th, 
+#myroomsMode table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#myroomsMode table tr:nth-child(even) {
+    background-color:  rgba(0, 0, 0, 0.3);
+}
+
+#myroomsMode table tr:hover {
+    background-color:  rgba(180, 122, 122, 0.3);
+}
+
+/* Image Styling */
+#myroomsMode table td img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Action Buttons */
+#myroomsMode table td .delete {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d02418;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+#myroomsMode table td a  {
+    text-decoration: none;
+    color: #fff;
+    background-color: #55cf09;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+#myroomsMode table td .delete:hover {
+    background-color: #900000;
+}
+#myroomsMode table td .update:hover {
+    background-color: #087321;
+}
+
+
+#myroomsMode {
+    /* margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        /* margin: 20px auto;
+        padding: 20px;
+        background: rgb(242, 242, 242);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: white; 
+        position: relative; */
+
+        width: 80%; /* Control width */
+        background: rgba(44, 55, 138, 0.383);;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: 100px;
+    
+}
+
+#myroomsMode h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #myroomsMode table {
+        font-size: 14px;
+    }
+
+    #myroomsMode table td img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #myroomsMode table td a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 670px)
+{
+    .mode
+    {
+        width: 100%;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 15px;
+        align-items: center;
+    }
+}
+
+
+ .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+
+ .image-section {
+            width: 100%;
+            height: 80%;
+            background: url('roomImg.jpg') no-repeat center center/cover;
+        }
+
+/* Make sure the owner section aligns correctly */
+
+
+/* Styling for the title */
+.titlehead {
+    text-align: center;  /* Center the text */
+    font-size: 28px;  /* Adjust size */
+    font-weight: bold;  /* Make it bold */
+    text-decoration: underline;  /* Add underline */
+    color: white;  /* Adjust color */
+    margin-bottom: 20px; /* Space below title */
+    margin-top: -200px;
+}
+
+.OwnerMode {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a vertical stack */
+    align-items: center; /* Center everything */
+    width: 100%;
+    margin-top: 30px; /* Space from the top */
+}
+
+#backButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #48c314;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    display: none; 
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100px;
+    margin: 50px;
+}
+
+#backButton:hover {
+    background-color: #097409;
+}
+
+#formH{
+
+    color: white;
+    text-decoration: underline;
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+
+/* Restrict table cell width and prevent overflow */
+td.description-cell {
+    max-width: 250px; /* Adjust as needed */
+     white-space: nowrap; /*Prevent text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show "..." for long text */
+}
+
